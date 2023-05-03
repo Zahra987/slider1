@@ -43,4 +43,31 @@ img{
  button:hover{
   cursor: pointer;
  }
-
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .images-box{
+    width: 580px;
+    height: 350px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .images-box{
+    width: 740px;
+    height: 410px;
+  }
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .images-box{
+    width: 900px;
+    height: 480px;
+  }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .images-box{
+    width: 1180px;
+    height: 550px;
+  }
+}
