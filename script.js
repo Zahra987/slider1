@@ -32,6 +32,22 @@ function handleClick(whichOne) {
      }
     //previous
     if (whichOne==='previous') {
-      
+      img2.style.transition='all 0.3s linear';
+      img2.style.transform='translateX(+100%)';
+      img1.style.transition='all 0.3s linear';
+      img1.style.transform='translateX(0)';
+      setTimeout(function (){
+        img2.style.transition='all 0s linear';
+        img2.style.transform='translateX(0)';
+        img3.src=img2.src;
+        img1.style.transition='all 0s linear';
+        img1.style.transform='translateX(-100%)';
+        img2.src=img1.src;
+        i--;
+        if (i==0) {
+          i=imgAddress.length;
+        }
+        img1.src=imgAddress[i-1];
+      },1000)
     }
 }
