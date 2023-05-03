@@ -28,7 +28,7 @@ function handleClick(whichOne) {
           i=-1;
         }
         img3.src=imgAddress[i+1];
-      },1000)
+      },334)
      }
     //previous
     if (whichOne==='previous') {
@@ -48,6 +48,6 @@ function handleClick(whichOne) {
           i=imgAddress.length;
         }
         img1.src=imgAddress[i-1];
-      },1000)
+      },334)
     }
 }
